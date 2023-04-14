@@ -12,7 +12,7 @@
 			//Write your code here
 			let check=false;
 			if(arr.length==0 || arr.length==1) return "-Infinity";
-			let i=arr[0]
+			let i=arr[0] 
 			for(let a =0 ;a<arr.length;a++){
 				if(arr[a]!=i){
 					check=true;
@@ -22,8 +22,10 @@
 				return "-Infinity";
 			}
 			let n=arr.length;
-			arr.sort();
-			return arr[n-2];
+			arr.sort(function(a, b) {
+  return a - b;
+}); 
+			return arr[n-2];    
 			
 		}
 
